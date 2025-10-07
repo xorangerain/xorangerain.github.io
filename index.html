@@ -174,11 +174,11 @@
             else{
                 var key=Hash(pInput.value);
                 console.log(key);
-                if(key==706081487 || key==-1517169428){
+                if(key==-1517169428){
                     console.log("ok")
                     pInput.style.borderBottom='0.667px solid #010000';
                     localStorage.setItem('key',key);
-                    window.location.href='/';
+                    window.location.href=window.location.href.replace('www',pInput.value);
                 }
                 else{
                     pInput.value='';
@@ -191,4 +191,5 @@
         })
     </script>
 </body>
+
 </html>
